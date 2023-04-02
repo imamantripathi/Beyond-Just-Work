@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,400&display=swap");
+* {
+  font-family: "Jost", sans-serif;
+}
+.navlink {
+  display: inline-block;
+  position: relative;
+}
+.navlink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navlink:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hero Section  */
+.slides-container {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+.slides-container::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}

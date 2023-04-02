@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond Just Work</title>
+    <link rel="website icon" type="png" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+  </head>
+  <body>
+    <!-- navbar goes here -->
+    <nav class="bg-white shadow-sm shadow-[#487EAC]">
+      <div class="max-w-6xl mx-auto px-2">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <!-- logo -->
+            <div>
+              <a
+                href="#"
+                class="flex items-center py-3 px-2 text-gray-700 hover:text-gray-900"
+              >
+                <img src="images/logo.png" alt="" />
+                <!-- <span class="font-bold text-xl text-center">Beyond Just <br> Work</span> -->
+              </a>
+            </div>
+
+            <!-- primary nav -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="#"
+                class="py-3 px-3 text-gray-700 hover:text-gray-900 navlink"
+                >Locations</a
+              >
+              <a
+                href="#"
+                class="py-3 px-3 text-gray-700 hover:text-gray-900 navlink"
+                >Solutions</a
+              >
+              <a
+                href="#"
+                class="py-3 px-3 text-gray-700 hover:text-gray-900 navlink"
+                >Why Chooses Us?</a
+              >
+            </div>
+          </div>
+
+          <!-- secondary nav -->
+          <div class="hidden md:flex items-center">
+            <a
+              href=""
+              class="py-2 px-3 border border-[#487EAC] text-[#487EAC] hover:bg-[#487EAC] hover:text-[#fff] transition ease-in-out delay-150 rounded"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- mobile button goes here -->
+          <div class="md:hidden flex items-center">
+            <button class="mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu hidden md:hidden">
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >Features</a
+        >
+        <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200"
+          >Pricing</a
+        >
+      </div>
+    </nav>
+    <!-- Hero Section Start  -->
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
