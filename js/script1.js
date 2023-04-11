@@ -4,17 +4,27 @@
  let pContent = document.getElementById("p-content");
  let link = document.getElementById("l-link");
  let solutionImg = document.getElementById("solution-img");
+ let solutionImgM = document.getElementById("solution-imgM");
+
 
  individual.addEventListener("click", function () {
+  individual.style.color="#487EAC";
+  medium.style.color="#000";
    pContent.innerHTML =
-	 "Flexible memberships and turnkey offices that fit all budgets and hybrid strategies. Find space to focus and collaborate at hundreds of locations close to home or around the world. <br /><br /> We offer personalized solutions and support for individuals and small teams to help you achieve your goals and grow your business.";
+	 "Amenable memberships with business-ready offices that are best-suited to all budgets and all work strategies. Find a space to focus on your work and collaborate from an office-based environment in accordance to your timetable.";
    link.href = "#!";
    solutionImg.src = "images/solution_img.jpg";
+   solutionImgM.src = "images/solution_img.jpg";
+
  });
 
  medium.addEventListener("click", function () {
+  individual.style.color="#000";
+  medium.style.color="#487EAC";
    pContent.innerHTML =
-	 "Power your hybrid strategy, enhance employee experience and save on real estate costs by combining private office, coworking, and software solutions. <br> <br>";
+	 "Take full advantage of the current prevailing hybrid strategy, elevate the concept of employee-centered work area and save on real estate and management costs through our solutions.";
    link.href = "#link21";
    solutionImg.src = "images/solution_img1.jpg";
+   solutionImgM.src = "images/solution_img1.jpg";
+
  });
