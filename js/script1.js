@@ -8,7 +8,7 @@
 
 
  individual.addEventListener("click", function () {
-  individual.style.color="#487EAC";
+  individual.style.color="#2A86D1";
   medium.style.color="#000";
    pContent.innerHTML =
 	 "Amenable memberships with business-ready offices that are best-suited to all budgets and all work strategies. Find a space to focus on your work and collaborate from an office-based environment in accordance to your timetable.";
@@ -20,7 +20,7 @@
 
  medium.addEventListener("click", function () {
   individual.style.color="#000";
-  medium.style.color="#487EAC";
+  medium.style.color="#2A86D1";
    pContent.innerHTML =
 	 "Take full advantage of the current prevailing hybrid strategy, elevate the concept of employee-centered work area and save on real estate and management costs through our solutions.";
    link.href = "#link21";
