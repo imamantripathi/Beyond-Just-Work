@@ -73,7 +73,7 @@
               >Register Now</a
             >
           </div>
-          
+
           <!-- mobile button goes here -->
           <div class="md:hidden flex items-center">
             <button class="mobile-menu-button">
@@ -97,7 +97,9 @@
       </div>
       <!-- mobile menu -->
       <div class="mobile-menu hidden md:hidden">
-        <a href="location.html" class="block py-2 px-4 text-md hover:bg-gray-200"
+        <a
+          href="location.html"
+          class="block py-2 px-4 text-md hover:bg-gray-200"
           >Locations</a
         >
         <a
@@ -110,7 +112,9 @@
           class="block py-2 px-4 text-md hover:bg-gray-200"
           >Organization</a
         >
-        <a href="whyChoosesUs.html" class="block py-2 px-4 text-md hover:bg-gray-200"
+        <a
+          href="whyChoosesUs.html"
+          class="block py-2 px-4 text-md hover:bg-gray-200"
           >Why Chooses Us?</a
         >
       </div>
@@ -167,7 +171,7 @@
                       </label>
                     </div>
                     <div class="mt-4 mb-2 sm:mb-4">
-                      <button 
+                      <button
                         type="none"
                         class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-[#000] transition duration-200 rounded shadow-md hover:shadow-lg focus:shadow-outline focus:outline-none"
                       >
@@ -176,7 +180,7 @@
                     </div>
                   </form>
                   <script>
-                    document.getElementById("my-form").onsubmit = function() {
+                    document.getElementById("my-form").onsubmit = function () {
                       location.href = "location.html";
                       return false; // prevent form from actually submitting
                     };
@@ -206,7 +210,8 @@
       </div>
       <div class="flex flex-col lg:flex-row mx-4">
         <div
-          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2"
+          onclick="location.href=`co-workingMembership.html`"
+          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2 cursor-pointer"
         >
           <div class="grid grid-cols-2 p-4">
             <div class="flex items-center justify-center">
@@ -225,8 +230,8 @@
             </div>
           </div>
         </div>
-        <div
-          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2"
+        <div  onclick="location.href=`meetingRoom.html`"
+          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2 cursor-pointer"
         >
           <div class="grid grid-cols-2 p-4">
             <div class="flex items-center justify-center">
@@ -245,15 +250,18 @@
             </div>
           </div>
         </div>
-        <div
-          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2"
+        <div onclick="location.href=`privateOffice.html`"
+          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2 cursor-pointer"
         >
           <div class="grid grid-cols-2 p-4">
             <div class="flex items-center justify-center">
               <img src="images/solutions/private-office.png" alt="" />
             </div>
             <div>
-              <h1 class="text-xl">Private <br> Office</h1>
+              <h1 class="text-xl">
+                Private <br />
+                Office
+              </h1>
               <p class="font-thin pb-2" style="font-size: 13px">
                 Business-ready offices with amenities
               </p>
@@ -265,8 +273,8 @@
             </div>
           </div>
         </div>
-        <div
-          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2"
+        <div onclick="location.href=`officeSuite.html`"
+          class="basis-1/4 border border-slate-300 hover:shadow-2xl hover:border-[#2A86D1] mx-2 my-2 cursor-pointer"
         >
           <div class="grid grid-cols-2 p-4">
             <div class="flex items-center justify-center">
@@ -340,7 +348,8 @@
       </div>
     </section>
     <!-- form -->
-    <section id="contact-form"
+    <section
+      id="contact-form"
       class="mb-20 lg:mx-20 md:mx-10 px-4 bg-no-repeat bg-cover bg-center bg-[url('images/contact.jpg')]"
     >
       <div class="py-10 w-full">
@@ -360,120 +369,123 @@
               with you right away to answer to your query.
             </p>
             <form action="contact.php" method="post">
-            <div class="md:flex items-center mt-12">
-              <div class="md:w-72 flex flex-col">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Name</label
-                >
-                <input
-                  required
-                  tabindex="0"
-                  arial-label="Please input name"
-                  type="name"
-                  name="name"
-                  class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
-                  placeholder="Please input name"
-                />
+              <div class="md:flex items-center mt-12">
+                <div class="md:w-72 flex flex-col">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Name</label
+                  >
+                  <input
+                    required
+                    tabindex="0"
+                    arial-label="Please input name"
+                    type="name"
+                    name="name"
+                    class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
+                    placeholder="Please input name"
+                  />
+                </div>
+                <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Email Address</label
+                  >
+                  <input
+                    required
+                    tabindex="0"
+                    arial-label="Please input email address"
+                    type="name"
+                    name="email"
+                    class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
+                    placeholder="Please input email address"
+                  />
+                </div>
               </div>
-              <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Email Address</label
-                >
-                <input
-                  required
-                  tabindex="0"
-                  arial-label="Please input email address"
-                  type="name"
-                  name="email"
-                  class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
-                  placeholder="Please input email address"
-                />
+              <div class="md:flex items-center mt-8">
+                <div class="md:w-72 flex flex-col">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Company name</label
+                  >
+                  <input
+                    required
+                    tabindex="0"
+                    role="input"
+                    name="company"
+                    arial-label="Please enter company name"
+                    type="name"
+                    class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
+                    placeholder="Please input company name"
+                  />
+                </div>
+                <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Phone Number</label
+                  >
+                  <input
+                    required
+                    tabindex="0"
+                    arial-label="Please input Phone Number"
+                    type="name"
+                    name="phone"
+                    class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
+                    placeholder="Please input Phone Number "
+                  />
+                </div>
               </div>
-            </div>
-            <div class="md:flex items-center mt-8">
-              <div class="md:w-72 flex flex-col">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Company name</label
-                >
-                <input
-                  required
-                  tabindex="0"
-                  role="input"
-                  name="company"
-                  arial-label="Please enter company name"
-                  type="name"
-                  class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
-                  placeholder="Please input company name"
-                />
+              <div class="md:flex items-center mt-8">
+                <div class="md:w-72 flex flex-col">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Location
+                  </label>
+                  <select
+                    required
+                    name="locations"
+                    id="locations"
+                    class="block w-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-3 px-3 block mt-4 appearance-none leading-normal focus:border-[#2A86D1] bg-gray-100"
+                  >
+                    <option value="gurugram">Gurugram</option>
+                    <!-- <option value="delhi">Delhi</option><option value="noida">Noida</option> -->
+                  </select>
+                  <label
+                    for="locations"
+                    class="absolute top-3 text-lg left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker"
+                    >Find Workspace In</label
+                  >
+                </div>
+                <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
+                  <label
+                    class="text-base font-semibold leading-none text-gray-800"
+                    >Team Size</label
+                  >
+                  <input
+                    required
+                    tabindex="0"
+                    name="team_size"
+                    arial-label="Please enter team size"
+                    type="name"
+                    class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
+                    placeholder="Please input number of people"
+                  />
+                </div>
               </div>
-              <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Phone Number</label
-                >
-                <input
-                  required
-                  tabindex="0"
-                  arial-label="Please input Phone Number"
-                  type="name"
-                  name="phone"
-                  class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
-                  placeholder="Please input Phone Number "
-                />
-              </div>
-            </div>
-            <div class="md:flex items-center mt-8">
-              <div class="md:w-72 flex flex-col">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Location
-                </label>
-                <select
-                  required
-                  name="locations"
-                  id="locations"
-                  class="block w-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-3 px-3 block mt-4 appearance-none leading-normal focus:border-[#2A86D1] bg-gray-100"
-                >
-                  <option value="gurugram">Gurugram</option>
-                  <!-- <option value="delhi">Delhi</option><option value="noida">Noida</option> -->
-                </select>
-                <label
-                  for="locations"
-                  class="absolute top-3 text-lg left-0 text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker"
-                  >Find Workspace In</label
-                >
-              </div>
-              <div class="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                <label
-                  class="text-base font-semibold leading-none text-gray-800"
-                  >Team Size</label
-                >
-                <input
-                  required
-                  tabindex="0"
-                  name="team_size"
-                  arial-label="Please enter team size"
-                  type="name"
-                  class="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-white-100"
-                  placeholder="Please input number of people"
-                />
-              </div>
-            </div>
-            <p class="text-xs leading-3 text-gray-600 dark:text-gray-200 mt-4">
-              By clicking submit you agree to our
-              <span class="text-[#2A86D1] underline">terms of service</span>,
-              privacy policy and how we use data as stated
-            </p>
-            <div class="flex items-center justify-center w-full">
-              <button type="submit"
-                class="mt-9 text-base font-semibold leading-none text-[#2A86D1] border border-[#2A86D1] py-4 px-10 bg-white rounded hover:bg-[#2A86D1] hover:text-[white] focus:ring-2 focus:ring-offset-2 focus:ring-[#2A86D1] focus:outline-none"
+              <p
+                class="text-xs leading-3 text-gray-600 dark:text-gray-200 mt-4"
               >
-                SUBMIT
-              </button>
-            </div>
+                By clicking submit you agree to our
+                <span class="text-[#2A86D1] underline">terms of service</span>,
+                privacy policy and how we use data as stated
+              </p>
+              <div class="flex items-center justify-center w-full">
+                <button
+                  type="submit"
+                  class="mt-9 text-base font-semibold leading-none text-[#2A86D1] border border-[#2A86D1] py-4 px-10 bg-white rounded hover:bg-[#2A86D1] hover:text-[white] focus:ring-2 focus:ring-offset-2 focus:ring-[#2A86D1] focus:outline-none"
+                >
+                  SUBMIT
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -555,7 +567,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="#"
+                          href="hudaCity.html"
                           class="md:text-lg text-md font-semibold leading-5 text-[#2A86D1] underline"
                           >Huda City Centre</a
                         >
@@ -578,7 +590,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="#"
+                          href="sector56.html"
                           class="md:text-lg text-md font-semibold leading-5 text-[#2A86D1] underline"
                           >Sector 56 Metro
                         </a>
@@ -601,7 +613,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="#"
+                          href="udyogVihar.html"
                           class="md:text-lg text-md font-semibold leading-5 text-[#2A86D1] underline"
                           >Udyog Vihar</a
                         >
@@ -624,7 +636,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="#"
+                          href="golfCourse.html"
                           class="md:text-lg text-md font-semibold leading-5 text-[#2A86D1] underline"
                           >Golf Course
                         </a>
@@ -647,7 +659,7 @@
                       </div>
                       <div class="mt-4">
                         <a
-                          href="#"
+                          href="sector14.html"
                           class="md:text-lg text-md font-semibold leading-5 text-[#2A86D1] underline"
                           >Sector 14
                         </a>
@@ -706,6 +718,8 @@
         </div>
       </div>
     </section>
+    <!-- location section end -->
+    <!-- Blog section start -->
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-14 mx-auto">
         <h2
@@ -807,17 +821,20 @@
                 <h2
                   class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
                 >
-                CASE STUDIES ━━━━
+                  CASE STUDIES ━━━━
                 </h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
                   Best Coworking Space in Gurgaon 2023
                 </h1>
                 <p class="leading-relaxed mb-3">
-                  Not many people question why they're drawn to coworking spaces and what makes them a great place to work. But, there is a lot more thought behind why people thrive in these types of environments.
-
+                  Not many people question why they're drawn to coworking spaces
+                  and what makes them a great place to work. But, there is a lot
+                  more thought behind why people thrive in these types of
+                  environments.
                 </p>
                 <div class="flex items-center flex-wrap">
-                  <a href="case1.html"
+                  <a
+                    href="case1.html"
                     class="text-[#2A86D1] inline-flex items-center md:mb-2 lg:mb-0"
                     >Read on
                     <svg
@@ -888,7 +905,8 @@
                   CASE STUDIES ━━━━
                 </h2>
                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                  Why choose a coworking space over working from home and coffee shops?
+                  Why choose a coworking space over working from home and coffee
+                  shops?
                 </h1>
                 <p class="leading-relaxed mb-3">
                   All Beyond just work buildings have areas designated for
@@ -896,7 +914,8 @@
                   all inclusive where work is concerned.
                 </p>
                 <div class="flex items-center flex-wrap">
-                  <a href="case2.html"
+                  <a
+                    href="case2.html"
                     class="text-[#2A86D1] inline-flex items-center md:mb-2 lg:mb-0"
                     >Read on
                     <svg
@@ -954,21 +973,21 @@
         </div>
       </div>
     </section>
+    <!-- Blog section end -->
     <!-- ====== Footer Section Start -->
     <footer class="relative bg-white pt-20 pb-10 lg:pt-[120px] pl-4 lg:pb-20">
       <div class="container mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full px-4 sm:w-2/3 lg:w-3/12">
             <div class="mb-10 w-full">
-              <a
-                href="index.html"
-                class="mb-6 inline-block max-w-[160px]"
-              >
-              <img src="images/logo.png" class="h-[50px]" />
-              
+              <a href="index.html" class="mb-6 inline-block max-w-[160px]">
+                <img src="images/logo.png" class="h-[50px]" />
               </a>
               <p class="text-body-color mb-7 text-base">
-                Beyond Just Work is a Gurugram based coworking and virtual space startup that was founded in 2019 with the vision of being a home to startups and helping them build their business in the most optimal and efficient way.
+                Beyond Just Work is a Gurugram based coworking and virtual space
+                startup that was founded in 2019 with the vision of being a home
+                to startups and helping them build their business in the most
+                optimal and efficient way.
               </p>
               <p class="text-dark flex items-center text-sm font-medium">
                 <span class="text-primary mr-3">
@@ -1057,7 +1076,7 @@
                     href="https://goo.gl/maps/iaTYya6DRJSHCd4t5"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                    Address 
+                    Address
                   </a>
                 </li>
                 <li>
@@ -1080,7 +1099,7 @@
                     href="organization.html"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                   Organization
+                    Organization
                   </a>
                 </li>
                 <li>
@@ -1096,7 +1115,7 @@
                     href="solutions.html"
                     class="text-body-color hover:text-primary mb-2 inline-block text-base leading-loose"
                   >
-                 Solutions
+                    Solutions
                   </a>
                 </li>
                 <li>
@@ -1144,15 +1163,34 @@
                     />
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/beyondjustwork/" target="_blank" rel="noopener noreferrer" class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] sm:mr-4 lg:mr-3 xl:mr-4">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.997 0.001H6.003C2.685 0.001 0 2.686 0 6.004V17.997C0 21.315 2.685 24 6.003 24H17.997C21.315 24 24 21.315 24 17.997V6.004C24 2.686 21.315 0.001 17.997 0.001ZM20.438 17.997C20.438 19.728 19.727 20.438 17.997 20.438H6.003C4.272 20.438 3.562 19.727 3.562 17.997V6.004C3.562 4.272 4.272 3.562 6.003 3.562H17.997C19.727 3.562 20.438 4.272 20.438 6.004V17.997Z" fill="currentColor"/>
-                    <path d="M12 7.029C9.322 7.029 7.029 9.321 7.029 12C7.029 14.678 9.322 16.971 12 16.971C14.678 16.971 16.971 14.678 16.971 12C16.971 9.321 14.678 7.029 12 7.029ZM12 15.222C10.244 15.222 8.778 13.755 8.778 12C8.778 10.244 10.244 8.778 12 8.778C13.755 8.778 15.222 10.244 15.222 12C15.222 13.755 13.755 15.222 12 15.222Z" fill="currentColor"/>
-                    <path d="M18.136 4.864C18.136 5.898 17.312 6.722 16.278 6.722H7.722C6.688 6.722 5.864 5.898 5.864 4.864V4.136C5.864 3.102 6.688 2.278 7.722 2.278H16.278C17.312 2.278 18.136 3.102 18.136 4.136V4.864Z" fill="currentColor"/>
+                <a
+                  href="https://www.instagram.com/beyondjustwork/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] sm:mr-4 lg:mr-3 xl:mr-4"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.997 0.001H6.003C2.685 0.001 0 2.686 0 6.004V17.997C0 21.315 2.685 24 6.003 24H17.997C21.315 24 24 21.315 24 17.997V6.004C24 2.686 21.315 0.001 17.997 0.001ZM20.438 17.997C20.438 19.728 19.727 20.438 17.997 20.438H6.003C4.272 20.438 3.562 19.727 3.562 17.997V6.004C3.562 4.272 4.272 3.562 6.003 3.562H17.997C19.727 3.562 20.438 4.272 20.438 6.004V17.997Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M12 7.029C9.322 7.029 7.029 9.321 7.029 12C7.029 14.678 9.322 16.971 12 16.971C14.678 16.971 16.971 14.678 16.971 12C16.971 9.321 14.678 7.029 12 7.029ZM12 15.222C10.244 15.222 8.778 13.755 8.778 12C8.778 10.244 10.244 8.778 12 8.778C13.755 8.778 15.222 10.244 15.222 12C15.222 13.755 13.755 15.222 12 15.222Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M18.136 4.864C18.136 5.898 17.312 6.722 16.278 6.722H7.722C6.688 6.722 5.864 5.898 5.864 4.864V4.136C5.864 3.102 6.688 2.278 7.722 2.278H16.278C17.312 2.278 18.136 3.102 18.136 4.136V4.864Z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </a>
-                
-                
+
                 <a
                   href="https://www.linkedin.com/company/beyondjustwork/"
                   class="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] sm:mr-4 lg:mr-3 xl:mr-4"
