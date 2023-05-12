@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // You can replace this with your own code to process the form data
 
     // Send email example using PHP mail function
-    $to = 'deepanshur213@gmail.com';
+    $to = 'deepanshur213@gmail.com , beyondjustwork@gmail.com';
     $subject = 'New Workspace Inquiry';
     $message = "First Name: $firstName\n"
       . "Last Name: $lastName\n"
