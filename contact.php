@@ -34,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Send the email
     if (mail($to, $subject, $message, $headers)) {
         // If email sent successfully
-        echo "<p>Your message has been sent successfully. We will contact you shortly.</p>";
+        echo "<script type='text/javascript'>alert('Your message has been sent successfully. We will contact you shortly.');</script>";
+        echo "header( 'Location: index.html' );";
     } else {
         // If email sending failed
         echo "<p>Sorry, we encountered an error while sending your message. Please try again later.</p>";

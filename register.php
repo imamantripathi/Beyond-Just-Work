@@ -17,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Send email
     if (mail($to, $subject, $message)) {
-        echo 'Thank you for your submission!';
+        echo "<script type='text/javascript'>alert('Your message has been sent successfully. We will contact you shortly.');</script>";
+        echo "header( 'Location: index.html' );";
     } else {
         echo 'An error occurred. Please try again later.';
     }
