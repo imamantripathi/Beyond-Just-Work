@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11084402691"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11084402691');
+</script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +17,8 @@
     <link rel="website icon" type="png" href="images/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,7 +40,8 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script--> </head>
+<!--End of Tawk.to Script-->
+</head>
   <body>
     <!-- navbar goes here -->
     <nav class="bg-white shadow-lg shadow-[#fff] sticky top-0 z-[10]">
@@ -85,7 +97,6 @@ s0.parentNode.insertBefore(s1,s0);
               >Register Now</a
             >
           </div>
-
           <!-- mobile button goes here -->
           <div class="md:hidden flex items-center">
             <button class="mobile-menu-button">
@@ -181,6 +192,112 @@ s0.parentNode.insertBefore(s1,s0);
                 <img class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl mb-8 lg:mb-0" src="images/daypass/2.jpg"
         </div>
     </section>
+    
+    <!--slider-->
+    
+<div
+  id="carouselExampleControls"
+  class="relative lg:p-44 " 
+  data-te-carousel-init
+  data-te-carousel-slide>
+  <!--Carousel items-->
+  <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] lg:h-[32rem] " style="border-radius: 9px;" >
+    <!--First item-->
+    <div
+      class="relative float-left -mr-[100%]  w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      data-te-carousel-active>
+      <img
+        src="images/daypass/6.jpg"
+        class="block w-full"
+        alt="Wild Landscape" />
+    </div>
+    <!--Second item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item>
+      <img
+        src="images/daypass/5.jpg"
+        class="block w-full"
+        alt="Camera" />
+    </div>
+    <!--Third item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item>
+      <img
+        src="images/daypass/7.jpg"
+        class="block w-full"
+        alt="Exotic Fruits" />
+    </div>
+      <!--fourth item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item>
+      <img
+        src="images/daypass/8.jpg"
+        class="block w-full"
+        alt="Exotic Fruits" />
+    </div>
+  </div>
+
+
+  <!--Carousel controls - prev item-->
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <!--Carousel controls - next item-->
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black  opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleControls"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Next</span
+    >
+  </button>
+</div>
+
+     
+       <!--slider End-->
+    
+    
     <!-- Section 2  -->
     <section>
         <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
@@ -191,7 +308,7 @@ s0.parentNode.insertBefore(s1,s0);
                 <div class="lg:max-w-lg">
                     <h2 class="text-3xl font-semibold text-gray-800 lg:text-4xl">Convenient  <span class="text-[#2A86D1]">locations</span></h2>
     
-                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 lg:text-base">If you are looking for a day pass to access some of the best fecilities in the heart of Gurgaon, you can't go wrong with our locationat Huda City Centre, Udyog Vihar Sec 56 Gurgaon, Sec 14 Gurgaon, and Golf Course. </p>
+                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 lg:text-base">If you are looking for a day pass to access some of the best fecilities in the heart of Gurgaon, you can't go wrong with our locationat Huda City Centre, Udyog Vihar, Sec 56 Gurgaon, Sec 14 Gurgaon, and Golf Course. </p>
                     <Whether class="mt-4 text-sm text-gray-500 dark:text-gray-400 lg:text-base">Whether you're looking for a place to work, relax, or play, our day pass services have everything you need to make the most of your day in Gurgaon. So why wait? Book your day pass now and experience the ultimate in convenience and luxury.</p>
     
                     <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
@@ -945,7 +1062,11 @@ s0.parentNode.insertBefore(s1,s0);
       </div>
     </footer>
     <!-- ====== Footer Section End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
     <script src="js/script1.js"></script>
     <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
+  
 </html>
